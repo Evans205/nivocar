@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - NIVOCARE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .section-header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        .section-header:hover {
+            text-decoration: underline;
+        }
+        .about-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2s forwards;
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .tools {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .tools .btn {
+            margin: 5px;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .tools .btn:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .footer .col-md-4 {
+            text-align: center;
+        }
+        .footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .footer .social-icons a:hover {
+            color: #f8b400;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1 class="section-header">About Us</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>NIVOCARE Research and Analytic Solutions</h2>
+                <p class="about-text">NIVOCARE Research and Analytic Solutions was founded by <strong>Eric Jeremiah</strong>, who serves as the <strong>CEO</strong>. We specialize in <strong>data analytics, programming, and research</strong>, delivering high-quality services to solve complex problems.</p>
+                <p class="about-text">Our expertise includes <strong>data insights, digital tool development, and research solutions</strong> tailored to your needs. Based in <strong>Makueni-Wote Town</strong>, we recruit and train <strong>enumerators and research assistants</strong> to ensure efficient data collection.</p>
+                <p class="about-text">Our team comprises <strong>data science experts, IT specialists, and research professionals</strong>, working together to provide cutting-edge solutions. Whether you need data-driven decision-making support or innovative digital tools, <strong>NIVOCARE is your trusted partner</strong> for research and analytics.</p>
+            </div>
+            <div class="col-md-6 about-image">
+                <img src="images/aboutus.png" alt="NIVOCARE Team">
+            </div>
+        </div>
+        <div class="tools">
+            <button class="btn btn-primary"><i class="fas fa-database"></i> SPSS</button>
+            <button class="btn btn-success"><i class="fas fa-chart-bar"></i> Stata</button>
+            <button class="btn btn-info"><i class="fab fa-r-project"></i> R</button>
+            <button class="btn btn-warning"><i class="fab fa-python"></i> Python</button>
+            <button class="btn btn-danger"><i class="fas fa-code"></i> C++</button>
+            <button class="btn btn-dark"><i class="fas fa-clipboard"></i> RedCap</button>
+            <button class="btn btn-secondary"><i class="fas fa-mobile-alt"></i> Odk</button>
+            <button class="btn btn-light"><i class="fas fa-file-alt"></i> Google Forms/Sheets, Docs</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Address</h4>
+                    <p>Makueni-Wote Town, Kenya</p>
+                </div>
+                <div class="col-md-4 social-icons">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Partners</h4>
+                    <p>Partner 1 | Partner 2 | Partner 3</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NIVOCARE Research and Analytic Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
