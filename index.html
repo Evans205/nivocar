@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIVOCARE - Research and Analytic Solutions</title>
+    
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Background Video Styling */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .section-header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        .section-header:hover {
+            text-decoration: underline;
+        }
+        .about-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2s forwards;
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            transform: translateY(20px);
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .tools {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .tools .btn {
+            margin: 5px;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .tools .btn:hover {
+            transform: scale(1.1);
+        }
+        .service-card {
+            min-height: 450px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .service-card img {
+            height: 200px; 
+            object-fit: cover;
+            width: 100%;
+        }
+        .service-card h3 {
+            font-weight: bold;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .footer .col-md-4 {
+            text-align: center;
+        }
+        .footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .footer .social-icons a:hover {
+            color: #f8b400;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand text-primary" href="#">NIVOCARE</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="#">home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">about us</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <section class="hero">
+        <video autoplay loop muted>
+            <source src="images/bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="text-uppercase">Research and Analytic Solutions</h1>
+            <p>We provide data-driven insights to support your projects.</p>
+            <a href="https://wa.me/254718973951" target="_blank" class="btn btn-success">
+                <i class="fab fa-whatsapp"></i> Get in Touch
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    
+    <section class="container" id="about">
+        <h1 class="section-header">About Us</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>NIVOCARE Research and Analytic Solutions</h2>
+                <p class="about-text">NIVOCARE Research and Analytic Solutions was founded by <strong>Eric Jeremiah</strong>, who serves as the <strong>CEO</strong>. We specialize in <strong>data analytics, programming, and research</strong>, delivering high-quality services to solve complex problems.</p>
+                <p class="about-text">Our expertise includes <strong>data insights, digital tool development, and research solutions</strong> tailored to your needs. Based in <strong>Makueni-Wote Town</strong>, we recruit and train <strong>enumerators and research assistants</strong> to ensure efficient data collection.</p>
+                <p class="about-text">Our team comprises <strong>data science experts, IT specialists, and research professionals</strong>, working together to provide cutting-edge solutions. Whether you need data-driven decision-making support or innovative digital tools, <strong>NIVOCARE is your trusted partner</strong> for research and analytics.</p>
+            </div>
+            <div class="col-md-6 about-image">
+                <img src="images/aboutus.png" alt="NIVOCARE Team">
+            </div>
+        </div>
+        <div class="tools">
+            <button class="btn btn-primary"><i class="fas fa-database"></i> SPSS</button>
+            <button class="btn btn-success"><i class="fas fa-chart-bar"></i> Stata</button>
+            <button class="btn btn-info"><i class="fab fa-r-project"></i> R</button>
+            <button class="btn btn-warning"><i class="fab fa-python"></i> Python</button>
+            <button class="btn btn-danger"><i class="fas fa-code"></i> C++</button>
+            <button class="btn btn-dark"><i class="fas fa-clipboard"></i> RedCap</button>
+            <button class="btn btn-secondary"><i class="fas fa-mobile-alt"></i> Odk</button>
+            <button class="btn btn-light"><i class="fas fa-file-alt"></i> Google Forms/Sheets, Docs</button>
+        </div>
+    </section>
+
+        <!-- Services Section -->
+<section id="services" class="py-12">
+    <div class="container">
+        <h2 class="text-center text-3xl font-bold mb-6">Our Services</h2>
+        <div class="row g-4">
+            
+            <!-- Grant Proposal Writing -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/proposal.jpeg" class="card-img-top" alt="Grant Proposal Writing">
+                    <div class="card-body text-center">
+                        <i class="fas fa-file-signature text-primary text-3xl"></i>
+                        <h3 class="mt-3">Grant Proposal Writing</h3>
+                        <p>Need funding for your project? Our expert grant writers craft compelling, research-backed proposals that maximize your chances of securing grants from institutions and donors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Analytics -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/data analytics.jpeg" class="card-img-top" alt="Data Analytics">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chart-bar text-primary text-3xl"></i>
+                        <h3 class="mt-3">Data Analytics</h3>
+                        <p>Turn raw data into meaningful insights! We analyze complex datasets, visualize trends, and provide actionable insights to help businesses and researchers make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitoring & Evaluation -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/monitoring.png" class="card-img-top" alt="Monitoring & Evaluation">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tasks text-primary text-3xl"></i>
+                        <h3 class="mt-3">Monitoring & Evaluation</h3>
+                        <p>Ensure your projects deliver real impact! We track progress, assess performance, and provide in-depth evaluations to improve efficiency and effectiveness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consultation Services -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/proposal.jpeg" class="card-img-top" alt="Consultation">
+                    <div class="card-body text-center">
+                        <i class="fas fa-comments text-primary text-3xl"></i>
+                        <h3 class="mt-3">Consultation Services</h3>
+                        <p>Confused about research, funding, or project management? Our expert consultants provide tailored solutions to help you achieve your goals effectively.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Collection Services -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/datacollection.jpeg" class="card-img-top" alt="Data Collection">
+                    <div class="card-body text-center">
+                        <i class="fas fa-database text-primary text-3xl"></i>
+                        <h3 class="mt-3">Data Collection</h3>
+                        <p>We gather high-quality data using proven methodologies, ensuring accuracy and reliability for research, business intelligence, and policy-making.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Entry -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/collect.jpeg" class="card-img-top" alt="Data Entry">
+                    <div class="card-body text-center">
+                        <i class="fas fa-keyboard text-primary text-3xl"></i>
+                        <h3 class="mt-3">Data Entry</h3>
+                        <p>We offer fast, accurate, and secure data entry services, ensuring your information is well-organized and easily accessible for future use.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+   <!-- Contact Section -->
+<section id="contact" class="bg-light" style="padding: 50px 0;">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form class="well" action="mailto:ericjeremiah16@gmail.com" method="post">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+                <a href="https://wa.me/254718973951" target="_blank" class="btn btn-success">
+                    <i class="fab fa-whatsapp"></i> Get in Touch
+                </a>
+            </div>
+
+            <!-- Google Map -->
+            <div class="col-md-6">
+                <iframe 
+                    class="map-container"
+                    style="width: 100%; height: 340px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15933.339157081135!2d37.62610753955078!3d-1.7838385999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f95f56345d327%3A0x88a5a5075a5d531c!2sWote%2C%20Kenya!5e0!3m2!1sen!2sus!4v1710687000000!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Address</h4>
+                    <p>Makueni-Wote Town, Kenya</p>
+                </div>
+                <div class="col-md-4 social-icons">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Partners</h4>
+                    <p>
+                        <a href="https://www.livetech.co.ke" target="_blank">Livetech Solutions</a> | 
+                        <a href="https://www.partner2website.com" target="_blank">Partner 2</a> | 
+                        <a href="https://www.partner3website.com" target="_blank">Partner 3</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NIVOCARE Research and Analytic Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 3 JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
